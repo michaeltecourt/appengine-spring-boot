@@ -43,7 +43,7 @@
         <web-resource-collection>
             <web-resource-name>Administration</web-resource-name>
             <description></description>
-            <url-pattern>/GleamFootballWeb/rpc/recording/*</url-pattern>
+            <url-pattern>/some-path/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>*</role-name>
