@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:web="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!-- START : Should not be necessary with SpringBootServletInitializer -->
+    <!-- Spring MVC Servlet -->
+    <servlet>
+        <servlet-name>appengine-spring-boot</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextClass</param-name>
+            <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+        </init-param>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>com.github.michaeltecourt.appengine.SampleSpringBootApplication</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!-- Let Spring MVC handle every URL -->
+    <servlet-mapping>
+        <servlet-name>appengine-spring-boot</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <!-- END : Should not be necessary with SpringBootServletInitializer -->
+
+    <!-- Automatically redirect to HTTPS for all resources -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>All</web-resource-name>
+            <description></description>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <!-- If you need to add Security Constraints -->
+    <!-- 
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Administration</web-resource-name>
+            <description></description>
+            <url-pattern>/GleamFootballWeb/rpc/recording/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+     -->
+    
+</web-app>
