@@ -30,11 +30,18 @@
 <script src="/webjars/jquery/jquery.js"></script>
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="/Area51Gwt/Area51Gwt.nocache.js"></script>
 <script type="text/javascript">
     nope = null;
 </script>
 </head>
 <body>
   <h1>Sample Spring Boot Application !</h1>
+  <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+    <noscript>
+      <div
+        style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Lame alert using GWT</div>
+    </noscript>
 </body>
 </html>

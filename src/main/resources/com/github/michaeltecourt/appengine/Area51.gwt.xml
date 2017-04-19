@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN"
+  "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module rename-to="Area51Gwt">
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name="com.google.gwt.user.User" />
+    <!-- GWT "Clean" Theme -->
+    <inherits name="com.google.gwt.user.theme.clean.Clean" />
+
+    <!-- Guava -->
+    <inherits name="com.google.common.base.Base" />
+    <inherits name="com.google.common.collect.Collect" />
+
+    <!-- Ui Binder + Safe HTML -->
+    <set-configuration-property name="UiBinder.useSafeHtmlTemplates" value="true" />
+
+    <!-- GWT app entry point class. -->
+    <entry-point class="com.github.michaeltecourt.appengine.client.Area51EntryPoint" />
+
+    <!-- Specify the paths for JS translatable code -->
+    <source path="client" />
+</module>
