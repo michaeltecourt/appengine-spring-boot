@@ -5,7 +5,7 @@ Sample Google App Engine (standard) application using :
  * Java 8 : requires to be among alpha testers of the Java 8 standard runtime
  * Spring Boot 1.5 : the application is packaged as an executable WAR also deployable on servlet containers
  * JSP : just to prove it works, you should probably use another template engine like thymeleaf
- * GWT 2.8.0 : **TODO Just to prove it's still there**
+ * GWT 2.8.0 : Just to prove it's still there
 
 ## How to deploy
 
