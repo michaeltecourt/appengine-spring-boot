@@ -134,9 +134,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <exclusions>
+                <!-- Do not embed Tomcat -->
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+                <!-- Exclude JUL-to-Slf4j in order to see Spring logs in cloud console -->
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jul-to-slf4j</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
