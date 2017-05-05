@@ -220,6 +220,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <archiveClasses>true</archiveClasses>
                     <webResources>
                         <!-- in order to interpolate variables from pom.xml to appengine-web.xml -->
