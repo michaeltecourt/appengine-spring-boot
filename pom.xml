@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.2.RELEASE</version>
+        <version>1.5.4.RELEASE</version>
     </parent>
 
     <groupId>com.github.michaeltecourt</groupId>
@@ -41,7 +41,7 @@
         <java.version>1.8</java.version>
         <appengine.app.id>your-application-id</appengine.app.id>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.sdk.version>1.9.51</appengine.sdk.version>
+        <appengine.sdk.version>1.9.54</appengine.sdk.version>
         <guava.version>20.0</guava.version>
         <jsr107cache.version>1.1</jsr107cache.version>
         <jstl.version>1.2</jstl.version>
